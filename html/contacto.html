@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+
+        <a href="../index.html"><img class="logo"  src="https://icones.pro/wp-content/uploads/2021/08/icone-de-chat-endormi.png" alt="gatito_gris"></a>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="ubicacion.html">UBICACION</a></li>
+                <li><a href="about.html">QUIENES SOMOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>CONTACTO</h1>
+        
+        <form method="post">
+
+            <fieldset>
+                <legend>Datos del Usuario</legend>        
+
+                <div>
+                
+                    <label for="nombre"> Nombre</label>
+                    
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+            
+                <div>
+                    <label for="mail">E-mail</label>
+                    
+                    <input type="email" id="mail" name="mail" placeholder="Ingrese su Email" required>
+                </div>
+            
+                <div>
+                    <label for="tel">Teléfono</label>
+                    
+                    <input type="tel" id="tel" name="tel" placeholder="Ingrese su numero" required>
+                </div>
+            
+                <div>
+                    <label for="ig">Link a Instagram</label>
+                    
+                    <input type="url" id="ig" name="ig" placeholder="https://www.instagram.com/" required>
+                </div>
+        
+                <div>
+                    <label for="opciones">Motivo de su consulta</label>
+                    <select name="opciones" id="opciones" required>
+                        
+                        <option value=""selected disabled>Seleccione una opción</option>
+                        <option value="concierto">Sacar un turno</option>
+                        <option value="imagenes">Duda con un trámite</option>
+                        <option value="trabajo">Trabajar con ustedes</option>
+                    </select>
+                </div>
+            
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Tu mensaje o consulta..." required></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>¿Cómo preferis que nos contactemos?</legend>
+                
+                <label for="contact1">E-mail</label>
+                <input type="checkbox" name="contacto" id="contact1" checked>
+                <label for="contact2"> Teléfono</label>
+                <input type="checkbox" name="contacto" id="contact2">
+                <label for="contact3">Instagram</label>
+                <input type="checkbox" name="contacto" id="contact3">
+            </fieldset>
+        
+            <fieldset>
+                <legend>¿Cómo nos conociste?</legend>
+                
+                <label for="conocer1">Redes sociales</label>
+                <input type="radio" id="conocer1" name="conocernos" value="conocer1">
+                <label for="conocer2">Publicidad</label>
+                <input type="radio" id="conocer2" name="conocernos" value="conocer2">
+                <label for="conocer3">Recomendación</label>
+                <input type="radio" id="conocer3" name="conocernos" value="conocer3">
+        
+            </fieldset>
+            
+        
+        <button type="submit" value="Enviar"> Enviar</button>
+        <button type="reset" value="Borrar">Borrar</button>
+        <button type="reset" value="Resetear Formulario">Resetear Formulario</button>
+        <input type="file">
+        </form>
+    </section>
+    
+
+    <footer>
+        <p> Gracias por visitar nuestra pagina, los esperamos.</p>
+        <p> Visite nuestras redes:</p>
+
+        <p>Powed by Giancarlo</p>
+
+    </footer>
+</body>
+</html>
